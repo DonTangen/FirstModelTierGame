@@ -12,7 +12,7 @@ public class DisableGravityOnHit : MonoBehaviour
         if (collisionInfo.collider.name == "Free Racing Car")
         {
          //   rb.useGravity = false;
-            rb.AddForce(Random.Range(-100, 100) * Time.deltaTime, 75 * Time.deltaTime, 25 * Time.deltaTime);
+            rb.AddForce(Random.Range(-100, 100) * Time.deltaTime, 50 * Time.deltaTime, 25 * Time.deltaTime);
             bc.enabled = false;
         }
 

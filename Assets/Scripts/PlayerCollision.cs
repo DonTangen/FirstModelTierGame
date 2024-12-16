@@ -2,12 +2,14 @@ using Unity.VisualScripting;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.VFX;
 
 public class PlayerCollision : MonoBehaviour
 {
     public PlayerMovement movement;
     public int score = 0;
     public Text GameOver;
+    public Vector3 chickenDeath;
 void OnCollisionEnter(Collision collisionInfo)
     {
         if (collisionInfo.collider.tag == "Obstacle")
